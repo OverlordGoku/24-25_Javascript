@@ -10,14 +10,28 @@
 <div id="Table">Change color</div>
 <button type ="button" onclick="backgroundChange">Click me</button>
 
+
 <script>
     function backgroundChange() {
         document.getElementById("table").style.backgroundColor = "blue";
+
+
     }
 
 
-</script>
-<body>
+
+    <script>
+    function toggle() {
+        const image = document.getElementById("turkey");
+        if (image.style.display === "none"){
+        image.style.display = "blue";
+    } else {
+            image.style.display = "block";
+            image.style.display = "red";
+
+        }
+    }
+
 
 
 <table>
