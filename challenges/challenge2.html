@@ -12,32 +12,30 @@
 
 
 <script>
-    function backgroundChange() {
-        document.getElementById("table").style.backgroundColor = "blue";
+        //document.getElementById("table").style.backgroundColor = "blue";
+        //Access to the HTML Element
+        table = document.getElementById("table");
+        counter = 0;
+
+        function backgroundChange() {
+            if (counter % 2 === 0) {
+            table.style.backgroundColor = "red";
+            } else {
+            table.style.backgroundColor = "blue";
+            }
+            counter++;
+
+
+
 
 
     }
 
 
-
-    <script>
-    function toggle() {
-        const image = document.getElementById("turkey");
-        if (image.style.display === "none"){
-        image.style.display = "blue";
-    } else {
-            image.style.display = "block";
-            image.style.display = "red";
-
-        }
-    }
-
-
-
-<table>
-    <tr>
-        <th>Company</th>
-        <th>Contact</th>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
         <th>Country</th>
     </tr>
     <tr>
