@@ -7,35 +7,10 @@
 <body>
 <!-- Add a button that when you click it, the background of the table changes to blue -->
 
-<div id="Table">Change color</div>
-<button type ="button" onclick="backgroundChange">Click me</button>
-
-
-<script>
-        //document.getElementById("table").style.backgroundColor = "blue";
-        //Access to the HTML Element
-        table = document.getElementById("table");
-        counter = 0;
-
-        function backgroundChange() {
-            if (counter % 2 === 0) {
-            table.style.backgroundColor = "red";
-            } else {
-            table.style.backgroundColor = "blue";
-            }
-            counter++;
-
-
-
-
-
-    }
-
-
-    <table>
-        <tr>
-            <th>Company</th>
-            <th>Contact</th>
+<table id="table">
+    <tr>
+        <th>Company</th>
+        <th>Contact</th>
         <th>Country</th>
     </tr>
     <tr>
@@ -69,5 +44,27 @@
         <td>Italy</td>
     </tr>
 </table>
+
+<button type="button" onclick="backgroundChange()">Click Me</button>
+
+<script>
+    //document.getElementById("table").style.backgroundColor = "blue";
+
+    // Access to the HTML Element
+    table = document.getElementById("table");
+    counter = 0;
+
+    function backgroundChange(){
+        if (counter % 2 === 0){
+            table.style.backgroundColor = "red";
+        }else{
+            table.style.backgroundColor = "blue";
+        }
+        counter++;
+
+    }
+
+</script>
+
 </body>
-</html>
+</html>`
